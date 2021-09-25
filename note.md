@@ -1,24 +1,3 @@
-# Data Platform MOMO
-1. Integration: How to centralize the data 
-- Mechanism:
-    - Pull mechanism: used for SQL
-    - Push mechanism: used for NoSQL
-- Data pipeline:
-On-board data: Do we need to collect new data?
-
-2. Data Lake/ Data WareHouse: Store and process data 
-3. Data Pipeline Management: Tool for non-tech
-
--> BI solutions 
--> Data Application: Develop application for end-users based on their data
-
-4. Data Security: critical one, and the most difficult one in MOMO
-5. Data Discovery / Observability: How users can find the location of the required data when they needed.
-6. Data Governance: Improve data quality
-
-Database structure: NoSQL and SQL
-How it stores, what it stores and why we need it
-
 # OLAP vs OLTP
 - OLAP (Online analytical Processing): used for business analysis.
     - Ex: finanical analysis, sale analysis, RECOMMENDATION engine
@@ -29,33 +8,32 @@ How it stores, what it stores and why we need it
 - Provide a consolidated view of data from a variety of exisiting systems.
 - Collecting the data from multiple systems to use for fututre analysis or in decision amking processes.
 
-## BigQuery
-- Def: a cloud hosted analytics data warehouse 
-- **Notes**:
+### BigQuery
+**Def**: a cloud hosted analytics data warehouse 
+**Notes**:
     - No indices
     - Does full table scans for every query => 1000s machines scan the table at the same time => FAST
 
 
-# Project
-## Flow:
-PostgreSQL -> Google Cloud Storage -> BigQuery
+# Flow:
+PostgreSQL -> Google Cloud Storage -> BigQuery <br>
 The flow is automated by Airflow
 # PostgreSQL
-## Database dump
+### Database dump
 **Def**: A database dump contains record of the table structure and/or the data from a database. It is usually in formed of SQL statements.
 **Usecase**: it helps to backup or duplicate a database
 
 In Postgre, we use the SQL Dump which generates a text file with SQL commands that when fed back to the server will recreate the database in the same state as it was at the time of dump.
 
 # Airflow:
-## Components:
+### Components:
 - Web Server: Node A
 - Scheduler: Node A
 - Metadata Database: Node B
 - Executor: Node C
 Multinode architectures, different components lie in different nodes.
-## States
-### DAGS
+### States
+**DAGS**
 - Running
 - Success
 - Failed
