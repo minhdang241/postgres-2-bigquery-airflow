@@ -3,6 +3,10 @@
 - Testing how fast I can pick up the tools
 
 # Tasks: 
+Implement the workflow as shown in the figure:
+
+![image](https://github.com/minhdang241/postgres-2-bigquery-airflow/blob/master/image.png)
+
 1. Apache Airflow: 
     - Tutorial videos: https://www.youtube.com/watch?v=s_28dAy9it8&list=PL5_c35Deekdm6N1OBHdQm7JZECTdm7zl-&index=9
     - Text book: Data pipeline with Airflow (Chapter 1) 
