@@ -1,0 +1,14 @@
+{
+	"postgre-2-bigquery-config": {
+		"DB_USER":"",
+		"DB_PASSWORD":"",
+		"DB_HOST":"",
+		"DB_PORT":5432,
+		"DB_NAME":"",
+
+		"GCS_BUCKET_NAME":"",
+		"GCS_SERVICE_ACCOUNT":"",
+		"GCS_PROJECT":"", 
+		"GCS_DATASET":"" 
+	}
+}

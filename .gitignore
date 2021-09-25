@@ -1,0 +1,5 @@
+.env
+config.json
+env_*
+.DS_Store
+credentials/
